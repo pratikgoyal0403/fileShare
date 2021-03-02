@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>download file</title>
+</head>
+<body>
+    <div class="github_link">
+        <i class="fab fa-github"></i>
+    </div>
+    <main class="main">
+        <div class="download-container">
+            <div class="img-container">
+                <img src="/download.svg" />
+            </div>
+            <h1 class="padding-top">Your file is ready to download</h1>
+            <p class="padding-top">Link expires in 24 hrs</p>
+            <p class="padding-top padding-bottom bolder"><%- filename%></p>
+            <p ><%- size%> kb</p>
+            <a href="<%- process.env.BASE_URL +'/'+ filePath%>" class="download-link">download file</a>
+        </div>
+    </div>
+</body>
+</html>
